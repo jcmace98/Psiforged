@@ -1,0 +1,150 @@
+macro "macro"
+	elem 
+		name = "Tab"
+		command = ".tab_target"
+	elem 
+		name = "Center+REP"
+		command = ".center"
+	elem 
+		name = "Return"
+		command = ".enter"
+	elem 
+		name = "Escape"
+		command = ".esc"
+	elem 
+		name = "West+UP"
+		command = "MoveKey 8 0"
+	elem 
+		name = "West+REP"
+		command = "MoveKey 8 1"
+	elem 
+		name = "North+UP"
+		command = "MoveKey 1 0"
+	elem 
+		name = "North+REP"
+		command = "MoveKey 1 1"
+	elem 
+		name = "East+UP"
+		command = "MoveKey 4 0"
+	elem 
+		name = "East+REP"
+		command = "MoveKey 4 1"
+	elem 
+		name = "South+UP"
+		command = "MoveKey 2 0"
+	elem 
+		name = "South+REP"
+		command = "MoveKey 2 1"
+	elem 
+		name = "0"
+		command = ".macro_skills \"0\""
+	elem 
+		name = "1"
+		command = ".macro_skills \"1\""
+	elem 
+		name = "2"
+		command = ".macro_skills \"2\""
+	elem 
+		name = "3"
+		command = ".macro_skills \"3\""
+	elem 
+		name = "4"
+		command = ".macro_skills \"4\""
+	elem 
+		name = "5"
+		command = ".macro_skills \"5\""
+	elem 
+		name = "6"
+		command = ".macro_skills \"6\""
+	elem 
+		name = "7"
+		command = ".macro_skills \"7\""
+	elem 
+		name = "8"
+		command = ".macro_skills \"8\""
+	elem 
+		name = "9"
+		command = ".macro_skills \"9\""
+	elem 
+		name = "A+UP"
+		command = "MoveKey 8 0"
+	elem 
+		name = "A+REP"
+		command = "MoveKey 8 1"
+	elem 
+		name = "B"
+		command = ".open_build"
+	elem 
+		name = "C"
+		command = ".open_stats"
+	elem 
+		name = "D+UP"
+		command = "MoveKey 4 0"
+	elem 
+		name = "D+REP"
+		command = "MoveKey 4 1"
+	elem 
+		name = "E"
+		command = ".grab"
+	elem 
+		name = "I"
+		command = ".open_inven"
+	elem 
+		name = "M"
+		command = ".open_map"
+	elem 
+		name = "S+UP"
+		command = "MoveKey 2 0"
+	elem 
+		name = "S+REP"
+		command = "MoveKey 2 1"
+	elem 
+		name = "T"
+		command = ".open_tech"
+	elem 
+		name = "V"
+		command = ".toggle_info"
+	elem 
+		name = "W+UP"
+		command = "MoveKey 1 0"
+	elem 
+		name = "W+REP"
+		command = "MoveKey 1 1"
+	elem 
+		name = "="
+		command = ".macro_skills \"=\""
+	elem 
+		name = "-"
+		command = ".macro_skills \"-\""
+	elem 
+		name = "Any"
+		command = ".inputkey [[*]]"
+	elem 
+		name = "Any+UP"
+		command = ".inputkey_up [[*]]"
+
+
+window "main"
+	elem "main"
+		type = MAIN
+		pos = 0,0
+		size = 1904x962
+		anchor1 = -1,-1
+		anchor2 = -1,-1
+		background-color = #000000
+		is-default = true
+		saved-params = ""
+		title = "Psiforged"
+		statusbar = false
+		icon = 'sprites\\misc\\icon.dmi'
+		macro = "macro"
+		menu = "menu"
+	elem "map_main"
+		type = MAP
+		pos = 0,0
+		size = 1904x962
+		anchor1 = 0,0
+		anchor2 = 100,100
+		is-default = true
+		saved-params = ""
+
